@@ -1,0 +1,15 @@
+.UserList-main {
+  border-top: 1px solid gray;
+  margin-top: 2em;
+}
+
+.UserList-main ul {
+  list-style: none;  
+  padding: 0;
+}
+
+.UserList-main li {
+  border-bottom: 1px dotted gray;
+  padding-bottom: 1em;
+  margin: 1em auto;
+}

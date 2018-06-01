@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Proptypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const showBlock = { display: 'block' };
 const hideBlock = { display: 'none' };
@@ -119,9 +119,9 @@ class AddUser extends Component {
 }
 
 AddUser.propTypes = {
-  error: Proptypes.bool.isRequired,
-  userAdded: Proptypes.bool.isRequired,
-  onAddUser: Proptypes.func.isRequired,
+  error: PropTypes.bool.isRequired,
+  userAdded: PropTypes.bool.isRequired,
+  onAddUser: PropTypes.func.isRequired,
 };
 
 export default AddUser;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import Header from './components/Header';
-import AddUser from './components/AddUser';
+import Header from './components/Header/';
+import AddUser from './components/AddUser/';
+import UserList from './components/UserList/';
 import './App.css';
 
 class App extends Component {
@@ -49,7 +50,7 @@ class App extends Component {
   }
 
   render() {
-    const { error, userAdded } = this.state;
+    const { users, error, userAdded } = this.state;
 
     return (
       <div className="App">
@@ -59,6 +60,7 @@ class App extends Component {
           userAdded={userAdded}
           onAddUser={this.handleAddUser}
         />
+        <UserList users={users} />
       </div>
     );
   }
