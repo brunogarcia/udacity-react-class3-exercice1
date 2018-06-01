@@ -50,11 +50,13 @@ class AddUser extends Component {
   }
 
   checkError() {
-    return this.props.error ? showBlock : hideBlock;
+    const styles = { color: 'red' };
+    return this.props.error ? { ...styles, ...showBlock } : hideBlock;
   }
 
   checkUserAdded() {
-    return this.props.userAdded ? showBlock : hideBlock;
+    const styles = { color: 'green' };
+    return this.props.userAdded ? { ...styles, ...showBlock } : hideBlock;
   }
 
   render() {
