@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import types from '../../utils/types';
 import User from '../User/';
 import ToggleGamesPlayed from '../ToggleGamesPlayed';
-import './UserList.css';
+import './styles.css';
 
 const hideMessage = 'Hide the Number of Games Played';
 const showMessage = 'Show the Number of Games Played';
