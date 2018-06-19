@@ -43,20 +43,6 @@ class AddUser extends Component {
     });
   }
 
-  /*
-    handleInputChange = event => {
-    const { name, value } = event.target;
-
-    this.setState(currState => ({
-      ...currState,
-      user: {
-        ...currState.user,
-        [name]: value,
-      },
-    }));
-  };
-  */
-
   isEmptyForm() {
     const values = Object.values(this.state);
     const checking = values.filter(value => value === '');
